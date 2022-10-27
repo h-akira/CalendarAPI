@@ -1,4 +1,4 @@
-# Gmail_API
+# Calendar_API
 ## 主な参考文献
 - [公式ドキュメント](https://developers.google.com/calendar/api/quickstart/python)
 

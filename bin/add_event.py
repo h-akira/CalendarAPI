@@ -6,6 +6,7 @@ import googleapiclient.discovery
 import google.auth
 sys.path.append(os.path.join(os.path.dirname(__file__),'../lib'))
 import calendar_module
+import traceback
 
 def main():
   import argparse
@@ -24,7 +25,12 @@ def main():
     start = datetime.datetime.now()
     options_str = " ".join([i for i in sys.argv[1:]])
 
-  creds = calendar_module.get_creds(options.token,options.credentials)
+  try:
+    creds = calendar_module.get_creds(options.token,options.credentials)
+  except google.auth.exceptions.RefreshError:
+    print(f"認証情報が無効です．{options.token}を削除してください．")
+    traceback.print_exc()
+    sys.exit()
   service = calendar_module.get_service(creds)
 
   events=[]

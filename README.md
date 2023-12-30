@@ -4,7 +4,10 @@
 
 ## 環境構築
 ```
-pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+# 任意の場所にて
+git clone https://github.com/h-akira/Calendar_API.git
+cd Calendar_API
+pip3 install -r requirements.txt
 ```
 
 ## 概要・使用方法
@@ -18,4 +21,10 @@ pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth
 `crient_secret_${長いやつ}.json`をダウンロードし，
 これをオプション`-c`で渡す．すると`token.json`が出力され，
 そのままプログラムが継続する．
+
+## リンク
+- https://github.com/h-akira/google_api_operator
+
+
+
 

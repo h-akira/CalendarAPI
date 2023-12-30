@@ -1,11 +1,11 @@
-# Calendar_API
+# CalendarAPI
 ## 主な参考文献
 - [公式ドキュメント](https://developers.google.com/calendar/api/quickstart/python)
 
 ## 環境構築
 ```
 # 任意の場所にて
-git clone https://github.com/h-akira/Calendar_API.git
+git clone git@github.com:h-akira/CalendarAPI.git
 cd Calendar_API
 pip3 install -r requirements.txt
 ```

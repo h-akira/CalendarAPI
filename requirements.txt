@@ -1,0 +1,1 @@
+google-api-operator @ git+ssh://git@github.com/h-akira/google_api_operator.git@38dc5e975051236708ea2330bc7cdb676dd0ab6b
